@@ -1,6 +1,6 @@
 ### Facilita - Guia Comercial
 
-#### Guia Comercial Facilita <br />
+#### Descrição <br />
 Este Guia Comercial foi feito para ser simples e leve, mas sem deixar de lado as novas tecnologias e design atuais.
 
 #### Pré-requisitos <br />
