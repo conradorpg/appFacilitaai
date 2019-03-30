@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;    
+}
+
+.container {
+    max-width: 960px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+.clear {
+    clear:both;
+}
+
+body {
+    background-color: #E8E8E8;
+}
+
+header {
+    background-color: whitesmoke;
+    padding: 8px 0;
+    height: 45px;
+    box-shadow: 0px 0px 5px 0px;
+}
+
+.logo-desktop {
+    float: left;
+}
+
+.logo-desktop a {
+    color: #F4A460;
+    font-size: 30px;
+    font-style: bold;
+}
+
+.logo-desktop img {
+    width: 30px;
+    height: 30px;
+}
+
+nav.desktop {
+    float: right;
+    margin-right: 60px;
+}
+
+nav.desktop li {
+    display: inline-block;
+    padding: 5px 5px;
+}
+
+nav.desktop a {
+    color: #F4A460;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav.desktop a:hover {
+    text-decoration: underline;
+}
+
+.logo-mobile {
+    display: none;
+}
+
+nav.mobile {
+    display: none;
+}
+
+    /* Categorias */
+
+section.categorias {
+    margin: 10px;    
+}
+
+.divisao {
+
+}
+
+.coluna {
+    width: 100px;
+    height: 130px;
+    padding: 10px 0px;
+    margin: 0px 2px 3px; 0px;
+    float: left;
+    background-color: whitesmoke;
+    border-radius: 8px;
+}
+
+.coluna a {    
+    text-decoration: none;
+    color: #F4A460;
+}
+
+.coluna i {
+    font-size: 70px;
+}
+
+.coluna h6 {
+    font-size: 13px;
+    text-align: center;
+    font-style: normal;
+}
+
+/* Configurações Página Empresas */
+
+section.lista-empresas {
+    /* background-color: whitesmoke; */
+}
+
+ul.lista {
+    list-style: none;
+}
+
+.lista {
+    margin: 5px;    
+    float: left;
+}
+
+.lista a {
+
+}
+
+.lista i {
+    margin: 3px;
+    font-size: 40px;
+    color: #F4A460;
+    display: inline-block;
+    background-color: whitesmoke;
+
+}
+
+.lista h6 {
+    width: 270px;
+    font-size: 20px;
+    font-style: normal;
+    color: #F4A460;
+    float: right;
+    padding: 10px;
+    margin: 5px 0px 0px 5px;   
+    background-color: whitesmoke;
+}
+
+    /* Configuração Página Conteúdo */
+
+/* body.conteudo-bg {
+    background-color: whitesmoke;
+} */
+
+.conteudo {
+    background-color: whitesmoke;
+    width: 300px;
+    height: 500px;
+    margin: 10px 10px 0px 50px;    
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.conteudo img {
+    width: 250px;
+    height: 250px;
+    margin: 10px 0px 30px 10px;
+    position: relative;
+    left: 10px;
+    border-radius: 10px;
+}
+
+.info hr {
+    border-top: 1px solid #DCDCDC;
+}
+
+.conteudo i {
+    float: left;
+    margin: 0 10px 0 20px;    
+    position: absolute;
+    padding-left: 10px;
+}
+
+.conteudo h3 {
+    text-align: center;
+    font-size: 14px;
+    width: 230px;
+    padding: 3px 0 2px 60px;
+}
+
+.botao-voltar i {
+    color: #dcdcdc;
+    font-size: 25px;
+    position: relative;
+    left: 100px;
+    top: 8px;
+}
+
+
+/* #### Configuração Mobile #### */
+
+@media screen and (max-width: 768px) {
+.logo-desktop, nav.desktop {
+    display: none;
+}
+
+.logo-mobile {
+    display: block;
+    text-align: center;
+}
+
+.logo-mobile a {
+    color: #F4A460;
+    font-size: 18px;
+}
+
+.logo-mobile img {
+    width: 30px;
+    height: 30px;
+}
+
+nav.mobile {
+    position: relative;
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+nav.mobile h3 {
+    cursor: pointer;
+    color: #F4A460;
+    position: absolute;
+    left: 0;
+    top: -30px;
+}
+
+nav.mobile ul {
+    display: none;
+    background-color: #F4A460;
+    position: absolute;
+    left: -2%;
+    top: 5px;
+    width: 104%;
+    text-align: center;
+    z-index: 9;
+}
+
+nav.mobile li {
+    padding: 8px 0;
+    border: 1px solid white;
+
+}
+
+nav.mobile a {
+    text-decoration: none;
+    color: white;
+}
+
+  /* Categorias */
+
+section.categorias {
+ margin: 5px 2px 2px 4px;
+}  
+
+.categorias .coluna {
+    width: 70px;
+    height: 90px;
+    border-radius: 7px;
+    cursor: pointer;
+    position: relative;
+    left: 5px;
+    z-index: 1;
+}
+
+.coluna i {
+    font-size: 45px;
+    padding-left: 6px;
+}
+
+.coluna h6 {
+    font-size: 10px;
+    text-align: center;
+}
+
+/* Configurações Página Empresas */
+
+.lista i {
+    font-size: 22px;
+    margin: 2px;
+}
+
+.lista h6 {
+    width: 270px;
+    font-size: 14px;
+    padding: 4px 0px 4px 10px;
+    margin: 2px 0px 0px 3px;
+}
+
+/* Configuração Página Conteúdo */
+
+body.conteudo-bg {
+    background-color: whitesmoke;
+}
+
+.conteudo {
+    margin: 10px 5px 0px 10px;    
+    border-radius: 10px;
+    padding: 0px;
+}
+
+.conteudo img {
+    margin-bottom: 30px;
+}
+
+.conteudo i {
+    padding-left: 10px;
+
+}
+
+.conteudo h3 {
+    font-size: 14px;
+    margin: 0px 0px 5px 10px;
+}
+
+
+}
