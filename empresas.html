@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Facilita Guia Comercial">
+<meta name="author" content="Conrado R P Gomes">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/fontello.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
+<link rel="icon" type="imagem/x-icon" href="images/_icones/facilitalogo.ico">
+
+<title>Facilita Guia Comercial</title>
+
+</head>
+
+<!-- Configuração Menu Desktop e Mobile -->
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-desktop"><a href="index.html"><img src="images/_icones/facilitalogo.ico"></a></div> <!-- logo-desktop -->
+                <nav class="desktop">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="">Sobre</a></li>
+                        <li><a href="">Horário</a></li>
+                        <li><a href="">Contato</a></li>
+                    </ul>
+                </nav> <!-- desktop -->
+            
+            <div class="logo-mobile"><a href="index.html"><img src="images/_icones/facilitalogo.ico"></a></div> <!-- logo-mobile -->
+                <nav class="mobile">
+                   <h3><i class="icon-menu"></i></h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="">Sobre</a></li>
+                            <li><a href="">Horário</a></li>
+                            <li><a href="">Contato</a></li>
+                        </ul>
+                </nav> <!-- mobile -->
+            
+            <div class="clear"></div>
+        </div> <!-- container -->
+    </header>
+    
+    <!-- Configuração Página Empresas -->
+    
+    <section class="lista-empresas">
+        <div class="container">
+           <div class="empresas">
+                <ul class="lista">
+                   <li class="item"><a href="conteudo.html"><i class="icon-phone-book"></i><h6>Biofisic</h6></a></li>
+                   <li class="item"><a href="empresas.html"><i class="icon-phone-book"></i><h6>Fitness</h6></a></li>
+                   <li class="item"><a href="empresas.html"><i class="icon-phone-book"></i><h6>Corpo e Mente</h6></a></li>
+                </ul>
+           </div> <!-- lista-empresas -->
+            <div class="clear"></div>
+        </div> <!-- container -->
+    </section>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function(){
+            $('nav.mobile h3').click(function(){
+                $('nav.mobile ul').slideToggle();
+            })
+        })
+    </script>
+</body>
+</html> 
