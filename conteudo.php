@@ -1,3 +1,10 @@
+<?php
+    include "conexao.php";
+    $id = $_GET['id'];
+    $query = "SELECT * FROM conteudo WHERE id = $id";
+    $connection = $mysqli->query($query) or die($mysqli->error);
+?>
+ 
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,7 +24,7 @@
 
 <!-- Configuração Menu Desktop e Mobile -->
 
-<body>
+<body class="conteudo-bg">
     <header>
         <div class="container">
             <div class="logo-desktop"><a href="index.html"><img src="images/_logos/facilitalogo.png"></a></div> <!-- logo-desktop -->
@@ -45,21 +52,30 @@
         </div> <!-- container -->
     </header>
     
-    <!-- Configuração Página Empresas -->
-    
-    <section class="lista-empresas">
+    <!-- Configuração Página Conteúdo -->
+        
+    <section class="info-empresas">
         <div class="container">
-           <div class="empresas">
-                <ul class="lista">
-                   <li class="item"><a href="conteudo.php?id=1"><i class="icon-phone-book"></i><h6>Biofisic</h6></a></li>
-                   <li class="item"><a href="conteudo.php?id=2"><i class="icon-phone-book"></i><h6>Fitness</h6></a></li>
-                   <li class="item"><a href="conteudo.php?id=3"><i class="icon-phone-book"></i><h6>Corpo e Mente</h6></a></li>
-                </ul>
-           </div> <!-- lista-empresas -->
-            <div class="clear"></div>
+            <?php while($dado = $connection ->fetch_array()) { ?>
+                <div class="conteudo">
+                    <div><img src="<?php echo $dado['logo']; ?>"></div>
+                    <div class="info">
+                        <hr><br>                    
+                        <i class="icon-phone"></i><h3><?php echo $dado['telefone']; ?></h3>
+                        <i class="icon-time"></i><h3><?php echo $dado['horario']; ?></h3>
+                        <i class="icon-email"></i><h3><?php echo $dado['email']; ?></h3>
+                        <i class="icon-address"></i><h3><?php echo $dado['endereco']; ?></h3><br>
+                        <hr>                
+                    </div>
+                    <div class="botao-voltar">
+                        <a href="empresas.html"><i class="icon-th" title="retornar" alt="retornar"></i></a>
+                    </div>
+                </div> <!-- conteudo -->
+            <?php } ?>    
+        <div class="clear"></div>
         </div> <!-- container -->
-    </section>
-    
+    </section>    
+      
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
         $(function(){
